@@ -2,3 +2,4 @@ pandas
 ipykernel
 google-cloud-bigquery
 python-dotenv
+dbt-bigquery
