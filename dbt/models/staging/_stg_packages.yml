@@ -19,4 +19,5 @@ models:
       - name: dataset_split
         data_tests:
           - accepted_values:
-              values: ["exploratory", "confirmatory"]
+              arguments:
+                values: ["exploratory", "confirmatory"]
