@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: int_tests
+    description: One row per headline test, aggregated from packages.
+    columns:
+      - name: test_id
+        data_tests:
+          - unique
+          - not_null
