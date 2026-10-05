@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: fct_test_balance
+    description: One row per multi-arm test with SRM inputs (observed vs. expected impressions).
+    columns:
+      - name: test_id
+        data_tests:
+          - unique
+          - not_null
+      - name: chi_square_stat
+        data_tests:
+          - not_null
