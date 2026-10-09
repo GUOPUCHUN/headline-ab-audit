@@ -31,10 +31,11 @@ select
     t.is_problem_period,
     t.n_arms,
     t.total_impressions,
+    t.arm_created_spread_minutes,
     min(a.observed) as min_arm_impressions,
     max(a.observed) as max_arm_impressions,
     sum(pow(a.observed - a.expected, 2) / a.expected) as chi_square_stat,
     t.n_arms - 1 as degrees_of_freedom
 from tests as t
 inner join arms as a using (test_id)
-group by 1, 2, 3, 4, 5, 6
+group by 1, 2, 3, 4, 5, 6, 7

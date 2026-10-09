@@ -15,6 +15,7 @@ select
     sum(impressions) as total_impressions,
     sum(clicks) as total_clicks,
     countif(is_winner) as n_winners,
+        timestamp_diff(max(created_at), min(created_at), minute) as arm_created_spread_minutes,
     min(created_at) between timestamp '2013-06-25'
         and timestamp '2014-01-10 23:59:59' as is_problem_period
 from packages
