@@ -1,5 +1,7 @@
 pandas
 ipykernel
-google-cloud-bigquery
+google-cloud-bigquery[pandas]
 python-dotenv
 dbt-bigquery
+scipy
+matplotlib
