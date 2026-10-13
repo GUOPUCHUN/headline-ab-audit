@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: fct_editor_decisions
+    description: One row per test with exactly one editor-selected winner.
+    columns:
+      - name: test_id
+        data_tests:
+          - unique
+          - not_null
+      - name: winner_rank
+        data_tests:
+          - not_null
