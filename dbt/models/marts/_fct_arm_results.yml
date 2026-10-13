@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: fct_arm_results
+    description: One row per arm with its CTR rank within the test.
+    columns:
+      - name: test_id
+        data_tests:
+          - not_null
+      - name: ctr_rank
+        data_tests:
+          - not_null
