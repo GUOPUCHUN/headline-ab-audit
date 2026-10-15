@@ -5,3 +5,5 @@ python-dotenv
 dbt-bigquery
 scipy
 matplotlib
+pytest
+ruff
